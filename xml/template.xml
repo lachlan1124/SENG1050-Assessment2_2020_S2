@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE holidayPackages [
+<!ELEMENT holidayPackages (holidayPackage+)>
+<!ELEMENT holidayPackage (packageName, description, cost*, numberOfNights*, popularity*, accommodationOptions+, couponCode?, reviews*, picturePath+, URL, flightOption*, carRentOption*)>
+    <!ELEMENT packageName (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT numberOfNights (#PCDATA)>
+    <!ELEMENT popularity (#PCDATA)>
+    <!ELEMENT accommodationOptions (accommodationName, location, additionalCost)>
+    <!ELEMENT accommodationName (#PCDATA)>
+    <!ELEMENT location (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT couponCode (#PCDATA)>
+    <!ELEMENT reviews (#PCDATA)>
+    <!ELEMENT picturePath (#PCDATA)>
+    <!ELEMENT URL (#PCDATA)>
+    <!ELEMENT flightOption (airplaneCompany, additionalCost)>
+    <!ELEMENT airplaneCompany (#PCDATA)>
+    <!ELEMENT carRentOption (carRentCompany, additionalCost, availableCars+)>
+    <!ELEMENT carRentCompany (#PCDATA)>
+    <!ELEMENT availableCars (#PCDATA)>
+
+    <!ATTLIST reviews person CDATA "anonymous">
+
+    <!ENTITY Q "Quantus">
+    <!ENTITY Jet "Jetstar">
+
+]>
+
+<holidayPackages>
+    <holidayPackage>
+        <packageName>Template Package</packageName>
+        <description>This package is a template that the other packages are based off</description>
+        <cost>$800</cost>
+        <numberOfNights>10</numberOfNights>
+        <popularity>5</popularity>
+        <accommodationOptions>
+            <accommodationName>hotel</accommodationName>
+            <location>Newcastle</location>
+            <additionalCost>40</additionalCost>
+        </accommodationOptions>
+        <couponCode>20%OFF</couponCode>
+        <reviews person = "Jeff">Had a great time</reviews>
+        <reviews>Didn't have good time</reviews>
+        <picturePath>images/template.jpg</picturePath>
+        <URL>https://example.site.com</URL>
+        <flightOption>
+            <airplaneCompany>&Jet;</airplaneCompany>
+            <additionalCost>100</additionalCost>
+        </flightOption>
+        <carRentOption>
+            <carRentCompany>ARA</carRentCompany>
+            <additionalCost>50</additionalCost>
+            <availableCars>Make Model</availableCars>
+        </carRentOption>
+    </holidayPackage>
+</holidayPackages>
