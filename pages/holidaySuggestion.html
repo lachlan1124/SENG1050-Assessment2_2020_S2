@@ -2,10 +2,68 @@
    <head>
     <meta charset="UTF-8">
     <title>goHoliday's suggestions</title>
+    <link rel="stylesheet" href="../style.css">
    </head>
 
     <body>
-        <h1>Suggest a holiday package. </h1>
+    <!--Provides navigation for the user-->
+        <div class = "nav">
+            <ul>
+                <li> <a href="../index.html">Home</a> </li>
+                <li> <a href="../xml/beachPackages.xml">Beach holidays</a></li>
+                <li> <a href="../xml/SnowPackages.xml">Snow holidays</a></li>
+                <li> <a href="../pages/holidaySuggestion.html">Holiday Suggestions</a></li>
+            </ul>
+        </div>
+
+        <div class = "upperSuggestion">
+            <div class = "welcomeText">
+                <h1>Suggest a holiday package.</h1>
+                
+                <a class = "button" href="#suggestionForm"> Start suggestion</a> <!--ISN"T FORMATED CORRECTLY-->
+            </div>
+        </div>
+
+        <div id="suggestionForm" class = "lowerSuggestion">
+            <h2>
+                Create a holiday suggestion 
+            </h2>
+
+            <form action="http://jkorpela.fj/cgi-bin/echo.cgi" method="GET">
+                <h3>Your info :</h3>
+                    First Name: <input type="text" name="fName"> <br>
+                    Last Name: <input type="text" name="lName"> <br>
+                    Email: <input type="text" name="email"> <br>
+                    Ammount of suggestions made before: <input type="text" name="prevSuggestions"> <br>
+                    Have you used our services before? <input type="radio" name="prevUses" value="Yes"> Yes   <input type="radio" name="prevUses" value="No"> No <br>
+                <h3>Holiday suggestions: </h3>
+                    Holiday name: <input type="text" name="holName"> <br>
+                    Category: <select name="category">
+                                <option value="">Select One</option>
+                                <option value="">Beach</option>
+                                <option value="">Adventure</option>
+                                <option value="">Snow</option>
+                                <option value="">Luxury</option>
+                            </select><br>
+                    Description: <br> <textarea name="description" rows="4" cols="200">Please enter a description.</textarea> <br>
+                    Is pricing included: <input type="radio" name="pirceInclude" value="Yes"> Yes   <input type="radio" name="pirceInclude" value="No"> No <br>  
+                    Is there a coupon code: <input type="radio" name="couponCode" value="Yes"> Yes   <input type="radio" name="couponCode" value="No"> No <br> 
+                <br>
+
+                <input style="position: absolute; right: 125px;" type="reset" value="Clear">
+                <input style="position: absolute; right: 50px;" type="submit" value="Submit">
+            </form>
+            
+        </div>
+
+        <div class = "copyright">
+            <footer>
+               <p> © Copyright 2020 Lachlan Marler | C3351542 | C3351542@uon.edu.au</p>
+            </footer>
+         </div>
+      </div>
+
+
 
     </body>
 </html>

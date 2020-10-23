@@ -11,6 +11,7 @@ html, body {
     height: 100%;
     background-color: #2F2E47;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -31,11 +32,12 @@ hr {
 
 
 .copyright {
-    background-color: white;
+    background-color:#2F2E47;
     text-align: right;
-    height: 50px;
+    height: 25px;
     margin-top: 0px;
     padding-top: 0px;
+    color: #35AD6D;
 }
 
 /* Navigation menu styling */
@@ -136,7 +138,7 @@ hr {
     /* Margins */
     margin-left: 1cm;
     margin-right: 1cm;
-    margin-bottom: 1cm;
+    margin-bottom: -4.3mm;
 
     /* Set opacity so background image is still visable */
     opacity: 80%;
@@ -146,7 +148,6 @@ hr {
 .content p, h2{
     margin-left: 1cm;
     margin-right: 1cm;
-
     opacity: 1;
 }
 
@@ -178,3 +179,53 @@ hr {
     margin-left: 1cm;
     margin-right: 1cm;
 }
+
+.upperSuggestion {
+        /* image */
+        background-image: url(images/airplane.jpg);
+        height: 15cm;
+    
+    
+        padding: 0px;
+        margin: 0px;
+    
+        /* Placement */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 10cm;
+        
+}
+
+.button {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+
+    text-align: center;
+
+    background-color:  #0F0E16;
+    color:  #99AEA3;
+
+    display: inline-block;
+
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.button:hover {
+    color: red;
+}
+
+.lowerSuggestion {
+    background-color: #7C7ABC;
+    height: 1000px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.lowerSuggestion h2 { text-decoration: none;}
