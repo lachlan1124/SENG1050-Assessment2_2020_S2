@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE holidayPackages [
+<!ELEMENT holidayPackages (holidayPackage+)>
+<!ELEMENT holidayPackage (packageName, description, cost, numberOfNights*, popularity*, accommodationOptions+, couponCode?, reviews*, picturePath+, URL, flightOption*, carRentOption*)>
+    <!ELEMENT packageName (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT numberOfNights (#PCDATA)>
+    <!ELEMENT popularity (#PCDATA)>
+    <!ELEMENT accommodationOptions (accommodationName, location, additionalCost)>
+    <!ELEMENT accommodationName (#PCDATA)>
+    <!ELEMENT location (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT couponCode (#PCDATA)>
+    <!ELEMENT reviews (#PCDATA)>
+    <!ELEMENT picturePath (#PCDATA)>
+    <!ELEMENT URL (#PCDATA)>
+    <!ELEMENT flightOption (airplaneCompany, additionalCost)>
+    <!ELEMENT airplaneCompany (#PCDATA)>
+    <!ELEMENT carRentOption (carRentCompany, additionalCost, availableCars+)>
+    <!ELEMENT carRentCompany (#PCDATA)>
+    <!ELEMENT availableCars (#PCDATA)>
+
+    <!ATTLIST reviews person CDATA "anonymous">
+
+    <!ENTITY Q "Quantus">
+    <!ENTITY Jet "Jetstar">
+
+]>
+
+<holidayPackages>
+    <holidayPackage>
+        <packageName>Charlotte Pass Family Holiday</packageName>
+        <description>Enjoy a 10 night snow trip at Charlotte Pass. Perfect for the whole family, this package come with ski passes and leason to help you hone in you ski skills.</description>
+        <cost>$3000</cost>
+        <numberOfNights>10</numberOfNights>
+        <popularity>3</popularity>
+        <accommodationOptions>
+            <accommodationName>Arlberg Ski Lodge</accommodationName>
+            <location>Charlotte Pass Snow Resort</location>
+            <additionalCost>$5500</additionalCost>
+        </accommodationOptions>
+        <accommodationOptions>
+            <accommodationName>Jerrabomberra Lodge</accommodationName>
+            <location>Charlotte Pass Snow Resort</location>
+            <additionalCost>$4000</additionalCost>
+        </accommodationOptions>
+        <accommodationOptions>
+            <accommodationName>Snowbird Ski Lodge</accommodationName>
+            <location>Charlotte Pass Snow Resort</location>
+            <additionalCost>$2800</additionalCost>
+        </accommodationOptions>
+        <accommodationOptions>
+            <accommodationName>Stillwell</accommodationName>
+            <location>Charlotte Pass Snow Resort</location>
+            <additionalCost>$2000</additionalCost>
+        </accommodationOptions>
+        <couponCode>SnowSki</couponCode>
+        <reviews person = "Jeff">Awsome ski Resort, great for snowboarding and sking</reviews>
+        <reviews>The leasons are great</reviews>
+        <reviews>Slops for ever skill level</reviews>
+        <picturePath>images/charlottePass.jpg</picturePath>
+        <URL>pages/charlottePass.html</URL>
+        <flightOption>
+            <airplaneCompany>&Jet;</airplaneCompany>
+            <additionalCost>$300</additionalCost>
+        </flightOption>
+    </holidayPackage>
+
+    <holidayPackage>
+        <packageName>Perisher 7 Day Holiday </packageName>
+        <description>Enjoy a 7 day ski trip to Perisher ski resort. Perisher has slops for all skill levels and is great for the whole family. Ski lift tickets included and leason can be purchured at Perisher.</description>
+        <cost>$2850</cost>
+        <numberOfNights>7</numberOfNights>
+        <popularity>5</popularity>
+        <accommodationOptions>
+            <accommodationName>Smiggins Hotel </accommodationName>
+            <location>Perisher Ski Resort</location>
+            <additionalCost>$3500</additionalCost>
+        </accommodationOptions>
+        <accommodationOptions>
+            <accommodationName>the Man from Snowy River Hotel</accommodationName>
+            <location>Perisher Ski Resort</location>
+            <additionalCost>$4000</additionalCost>
+        </accommodationOptions>
+        <picturePath>images/perisher.jpg</picturePath>
+        <URL>pages/perisher.html</URL>
+        <carRentOption>
+            <carRentCompany>Hertz</carRentCompany>
+            <additionalCost>$500</additionalCost>
+            <availableCars>Toyota Prado</availableCars>
+            <availableCars>Nissan X-Trail</availableCars>
+            <availableCars>Toyota RAV4</availableCars>
+        </carRentOption>
+    </holidayPackage>
+
+    <holidayPackage>
+        <packageName>Perisher 14 Day Holiday </packageName>
+        <description>Enjoy a 14 day ski trip to Perisher ski resort. Perisher has slops for all skill levels and is great for the whole family. Ski lift tickets included and leason can be purchured at Perisher.</description>
+        <cost>$4000</cost>
+        <numberOfNights>14</numberOfNights>
+        <popularity>4</popularity>
+        <accommodationOptions>
+            <accommodationName>Smiggins Hotel </accommodationName>
+            <location>Perisher Ski Resort</location>
+            <additionalCost>$5500</additionalCost>
+        </accommodationOptions>
+        <accommodationOptions>
+            <accommodationName>the Man from Snowy River Hotel</accommodationName>
+            <location>Perisher Ski Resort</location>
+            <additionalCost>$6000</additionalCost>
+        </accommodationOptions>
+        <picturePath>images/perisher.jpg</picturePath>
+        <URL>pages/perisher.html</URL>
+        <carRentOption>
+            <carRentCompany>Hertz</carRentCompany>
+            <additionalCost>$750</additionalCost>
+            <availableCars>Toyota Prado</availableCars>
+            <availableCars>Nissan X-Trail</availableCars>
+            <availableCars>Toyota RAV4</availableCars>
+        </carRentOption>
+    </holidayPackage>
+</holidayPackages>

@@ -1,14 +1,134 @@
 <!DOCTYPE html>
-
-<html>
+<!--Author: Lachlan Marler-->
+<html lang="en">
    <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>goHoliday's great holiday packages</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
    </head>
 
    <body>
-    <h1></h1>
-    <a href="xml/template.xml">template</a>
+
+   <!--Provides navigation for the user-->
+      <div class = "nav">
+         <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="xml/beachPackages.xml">Beach holidays</a></li>
+            <li> <a href="xml/SnowPackages.xml">Snow holidays</a></li>
+         </ul>
+      </div>
+    
+    <!--Everything in this div is what the user first sees when the webpage loads-->
+      <div class = "welcome">
+         <div class = "welcomeText">
+            <h1>goHoliday's great holiday packages</h1>
+            <p>Welome to goHoliday, we are a Newcaslte based travel agency</p>
+         </div>
+      </div>
+      <br>
+
+   <!-- the content divs are where most of the homepage content is formated-->
+      <div class = "contentBackground"> 
+
+         <div class = "content">
+
+         <hr>
+         <h2>flexable package options</h2>
+
+         <p>
+            For each of the holiday package, we offer there are multiple options for accommodation, flights and car rentals. This flexibility allows you to pick the right accommodation for you based on your budget
+            or personal preferences. Pick a flight with your favourite airline and rent the car that is right for you and the people you are travelling with. Here at goHolidays, we believe in giving you option 
+            in your holiday to make it the best that it can be, this is why we provide a different option within the same package.
+         </p>
+
+         <p> Below is some of the option you can customize</p>
+
+         <ul>
+            <li>Accommodation</li>
+            <li>Flights</li>
+            <li>Car Rentals</li>
+         </ul>
+
+         <hr>
+
+         <h2>Supporting Australia tourism</h2>
+
+         <p>
+            The holiday package we offer allow you to quickly find a beautiful place to holiday here in Australia. That means while your away you know you are supporting Australian business and assisting in our tourism
+            industry. Australia has so much to offer for holiday go'ers from the gorgeous sunshine coast to our exciting snow seasons there is something here for everyone to explore, why go abroad when you can explore
+            the beauty of Australia for much cheaper.
+         </p>
+
+         <hr>
+
+         <h2>Our most popular packages</h2>
+
+         <p id="font">Below are are top 3 <span style="font-size: 20px;"><strong>best</strong></span> holiday packages that we offer.</p>
+         <div class = "featuredPackages">
+            <ul>
+               <li>
+                  <!-- information on byron-->
+                  <img src="images/byron.jpg" alt="byron" style="float:left;width:500px;height:250px;">
+                  <h3>Byron Bay Holiday</h3>
+                  <p>Enjoy a beautiful trip to byron bay, below are some suggest actives to do while in byron</p>
+                  <ul style = "list-style-type: disc">
+                     <li style="padding-bottom: 0;">Swim at the beach</li>
+                     <li style="padding-bottom: 0;">Markets</li>
+                     <li style="padding-bottom: 0;">Shopping</li>
+                     <li style="padding-bottom: 0;">Stone and Wood brewery</li>
+                     <li style="padding-bottom: 0;">Visting the most easterly point of Australia</li>
+                  </ul>
+                  <p>Our byron bay package has multiple otion for accommodation, cars to rent and flight to get you to your destination.</p>
+                  <br>
+                  <br>
+               </li>
+               <li>
+                  <!-- information on noosa-->
+                  <img src="images/noosa.jpg" alt="nossa" style="float:left;width:500px;height:250px;">
+                  <h3>Luxury Noosa Holiday</h3>
+                  <p>Have a relexing trip to Noosa with our Luxury Noosa Holiday package</p>
+                  <p>Some things to do while in Noosa</p>
+                  <ul style = "list-style-type: disc">
+                     <li style="padding-bottom: 0;">Swim at the beach</li>
+                     <li style="padding-bottom: 0;">Kayaking</li>
+                     <li style="padding-bottom: 0;">Shopping</li>
+                     <li style="padding-bottom: 0;">Whale watching</li>
+                     <li style="padding-bottom: 0;">Coastal walks</li>
+                  </ul>
+                  <p>
+                     Our Noosa package has multiple otion for accommodation, cars to rent and flight to get you to your destination. You'll love the a holiday in Noosa with it's
+                     perfert year round weather.
+                  </p>
+               </li>
+               <li>
+                  <!-- information on perisher-->
+                  <img src="images/perisher.jpg" alt="perisher" style="float:left;width:500px;height:250px;">
+                  <h3>Perisher 7 Day Holiday</h3>
+                  <p>Experince an action packed week with out Perisher 7 Day Holiday Package</p>
+                  <p>Things we recommend while your in Perisher</p>
+                  <ul style = "list-style-type: disc">
+                     <li style="padding-bottom: 0;">Sking</li>
+                     <li style="padding-bottom: 0;">Snowboard</li>
+                     <li style="padding-bottom: 0;">Building snowman</li>
+                  </ul>
+                  <p>Our Perisher package has multiple otion for accommodation and cars to rent to get you to your destination. More information about Perisher can be found at there website, <a href="https://www.perisher.com.au/"> Click Here</a></p>
+               </li>
+            </ul>
+         </div>
+
+
+      </div>
+   
+   <!-- Copyright information-->
+      <div class = "copyright">
+         <footer>
+            <p> © Copyright 2020 Lachlan Marler | C3351542 | C3351542@uon.edu.au</p>
+         </footer>
+      </div>
+   </div>
+    
    </body>
 
 </html>

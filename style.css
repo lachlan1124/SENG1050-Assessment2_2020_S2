@@ -1,1 +1,180 @@
+/* 
+Stylesheet for index.html
+Author: Lachlan Marler
+StudentID: C3351542
+*/
 
+
+/* Non class styling */
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #2F2E47;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+
+.copyright {
+    background-color: white;
+    text-align: right;
+    height: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/* Navigation menu styling */
+.nav ul {
+    background-color: #2F2E47;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.nav li{
+    float: left;
+}
+
+.nav a {
+    color: #99AEA3;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5mm 32px;
+}
+
+.nav a:hover {
+    background-color: #0F0E16;
+    color: red;
+    font-size: 30px;
+}
+
+.nav a:active {color: #820000;}
+
+.nav a:visited { color: #35AD6D;}
+
+.nav a:visited:hover {color: red;}
+
+/* Welcome message styling */
+.welcome {
+    /* image */
+    background-image: url(images/background.jpg);
+    height: 15cm;
+
+
+    padding: 0px;
+    margin: 0px;
+
+    /* Placement */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10cm;
+    
+
+    
+}
+
+.welcome p {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.welcomeText h1 {
+    letter-spacing: 2px;
+}
+
+.welcomeText {
+
+    margin: 0;
+
+    /* Placement, centre text on image */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    /* create some spacing */
+    padding: 5mm;
+
+    /* set colour */
+    background-color: #2F2E47;
+    color: #35AD6D;
+
+}
+
+/*Site content styling */
+.content
+{
+    /* set background colour to whitish */
+    background-color: #CECECE;
+
+    /* Margins */
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-bottom: 1cm;
+
+    /* Set opacity so background image is still visable */
+    opacity: 80%;
+    
+}
+
+.content p, h2{
+    margin-left: 1cm;
+    margin-right: 1cm;
+
+    opacity: 1;
+}
+
+.contentBackground {
+    /* background image */
+    background-image: url(images/contentBackground.jpg);
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+/* featured packages styling */
+.featuredPackages ul {
+    list-style-type: none;
+    opacity: 1;
+}
+
+.featuredPackages li {
+    padding-bottom: 50px;
+}
+
+
+.featuredPackages img {
+    padding-right: 5mm;
+}
+
+#font
+{
+    font-size: 18px;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE holidayPackages [
 <!ELEMENT holidayPackages (holidayPackage+)>
-<!ELEMENT holidayPackage (packageName, description, cost*, numberOfNights*, popularity*, accommodationOptions+, couponCode?, reviews*, picturePath+, URL, flightOption*, carRentOption*)>
+<!ELEMENT holidayPackage (packageName, description, cost, numberOfNights*, popularity*, accommodationOptions+, couponCode?, reviews*, picturePath+, URL, flightOption*, carRentOption*)>
     <!ELEMENT packageName (#PCDATA)>
     <!ELEMENT description (#PCDATA)>
     <!ELEMENT cost (#PCDATA)>
@@ -38,7 +38,7 @@
         <accommodationOptions>
             <accommodationName>hotel</accommodationName>
             <location>Newcastle</location>
-            <additionalCost>40</additionalCost>
+            <additionalCost>$40</additionalCost>
         </accommodationOptions>
         <couponCode>20%OFF</couponCode>
         <reviews person = "Jeff">Had a great time</reviews>
@@ -47,11 +47,11 @@
         <URL>https://example.site.com</URL>
         <flightOption>
             <airplaneCompany>&Jet;</airplaneCompany>
-            <additionalCost>100</additionalCost>
+            <additionalCost>$100</additionalCost>
         </flightOption>
         <carRentOption>
             <carRentCompany>ARA</carRentCompany>
-            <additionalCost>50</additionalCost>
+            <additionalCost>$50</additionalCost>
             <availableCars>Make Model</availableCars>
         </carRentOption>
     </holidayPackage>

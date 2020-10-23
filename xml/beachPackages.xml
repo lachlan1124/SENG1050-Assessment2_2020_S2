@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE holidayPackages [
+<!ELEMENT holidayPackages (holidayPackage+)>
+<!ELEMENT holidayPackage (packageName, description, cost, numberOfNights*, popularity*, accommodationOptions+, couponCode?, reviews*, picturePath+, URL, flightOption*, carRentOption*)>
+    <!ELEMENT packageName (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT numberOfNights (#PCDATA)>
+    <!ELEMENT popularity (#PCDATA)>
+    <!ELEMENT accommodationOptions (accommodationName, location, additionalCost)>
+    <!ELEMENT accommodationName (#PCDATA)>
+    <!ELEMENT location (#PCDATA)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT couponCode (#PCDATA)>
+    <!ELEMENT reviews (#PCDATA)>
+    <!ELEMENT picturePath (#PCDATA)>
+    <!ELEMENT URL (#PCDATA)>
+    <!ELEMENT flightOption (airplaneCompany, additionalCost)>
+    <!ELEMENT airplaneCompany (#PCDATA)>
+    <!ELEMENT carRentOption (carRentCompany, additionalCost, availableCars+)>
+    <!ELEMENT carRentCompany (#PCDATA)>
+    <!ELEMENT availableCars (#PCDATA)>
+
+    <!ATTLIST reviews person CDATA "anonymous">
+
+    <!ENTITY Q "Quantus">
+    <!ENTITY Jet "Jetstar">
+
+]>
+
+<holidayPackages>
+    <holidayPackage>
+        <packageName>Byron Bay Holiday</packageName>
+        <description>Explore the beautiful beachside town of Byron. Great for the whole family with tons of activities from the farmers markets to surfing at the beach. </description>
+        <cost>$400</cost>
+        <numberOfNights>7</numberOfNights>
+        <popularity>5</popularity>
+        <accommodationOptions>
+            <accommodationName>Byron Bay YHA</accommodationName>
+            <location>7 Carlyle St, Byron Bay NSW 2481</location>
+            <additionalCost>$420</additionalCost>
+        </accommodationOptions>
+        <accommodationOptions>
+            <accommodationName>Byron Bay Rainforest Resort</accommodationName>
+            <location>39-51 Broken Head Rd, Byron Bay NSW 2481</location>
+            <additionalCost>$2275</additionalCost>
+        </accommodationOptions>    
+        <couponCode>5%OFF</couponCode>
+        <reviews person = "Jim">Had a great time</reviews>
+        <reviews> The accommodation was great</reviews>
+        <reviews person = "Jess">Lovely town near the beach</reviews>
+        <picturePath>images/byronBay.jpg</picturePath>
+        <URL>pages/Byron.html</URL>
+        <flightOption>
+            <airplaneCompany>&Jet;</airplaneCompany>
+            <additionalCost>$200</additionalCost>
+        </flightOption>
+        <flightOption>
+            <airplaneCompany>&Q;</airplaneCompany>
+            <additionalCost>$250</additionalCost>
+        </flightOption>
+        <carRentOption>
+            <carRentCompany>Hertz</carRentCompany>
+            <additionalCost>150</additionalCost>
+            <availableCars>Jeep Grand Cherokee</availableCars>
+            <availableCars>Mazda 3</availableCars>
+            <availableCars>Volkswagen Golf </availableCars>
+        </carRentOption>
+    </holidayPackage>
+
+    <holidayPackage>
+        <packageName>Gold Coast Holiday</packageName>
+        <description>Enjoy 14 days at the sunny Gold Coast located in QueensLand. There is plenty to do from the beautiful beach to the taking a short drive to the theme parks. </description>
+        <cost>$700</cost>
+        <numberOfNights>14</numberOfNights>
+        <popularity>4</popularity>
+        <accommodationOptions>
+            <accommodationName>Burleigh Beach Tower</accommodationName>
+            <location>52 Goodwin Terrace, Burleigh Heads QLD 4220</location>
+            <additionalCost>$4200</additionalCost>
+        </accommodationOptions>
+        <picturePath>images/goldCoast.jpg</picturePath>
+        <URL>pages/goldCoast.html</URL>
+        <flightOption>
+            <airplaneCompany>&Jet;</airplaneCompany>
+            <additionalCost>100</additionalCost>
+        </flightOption>
+        <flightOption>
+            <airplaneCompany>&Q;</airplaneCompany>
+            <additionalCost>200</additionalCost>
+        </flightOption>
+        <carRentOption>
+            <carRentCompany>East Coast Car Rentals</carRentCompany>
+            <additionalCost>250</additionalCost>
+            <availableCars>Suzuki Swift</availableCars>
+            <availableCars>Kia Rio</availableCars>
+        </carRentOption>
+    </holidayPackage>
+
+    <holidayPackage>
+        <packageName>Luxury Noosa Holiday</packageName>
+        <description>Enjoy the beautiful beaches of Noosa in QueensLand. With a lovely 25 °C average tempurture the weather is alway nice.</description>
+        <cost>$2000</cost>
+        <numberOfNights>7</numberOfNights>
+        <popularity>5</popularity>
+        <accommodationOptions>
+            <accommodationName>Mantra French Quarter Noosa</accommodationName>
+            <location>62 Hastings St, Noosa Heads QLD 4567</location>
+            <additionalCost>$3150</additionalCost>
+        </accommodationOptions>
+        <accommodationOptions>
+            <accommodationName>On The Beach Noosa Resort</accommodationName>
+            <location>49 Hastings St, Noosa Heads QLD 4565</location>
+            <additionalCost>$4200</additionalCost>
+        </accommodationOptions>
+        <couponCode>GDS32</couponCode>
+        <reviews person = "Josh">Loved the beachside accommodation</reviews>
+        <picturePath>images/nossa.jpg</picturePath>
+        <URL>pages/noosa.html</URL>
+        <flightOption>
+            <airplaneCompany>&Q;</airplaneCompany>
+            <additionalCost>$400</additionalCost>
+        </flightOption>
+        <carRentOption>
+            <carRentCompany>Hertz</carRentCompany>
+            <additionalCost>$1000</additionalCost>
+            <availableCars>Audi Q8</availableCars>
+            <availableCars>Ford Mustang GT Convertible</availableCars>
+        </carRentOption>
+    </holidayPackage>
+</holidayPackages>
