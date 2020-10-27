@@ -3,6 +3,42 @@
     <meta charset="UTF-8">
     <title>goHoliday's suggestions</title>
     <link rel="stylesheet" href="../style.css">
+
+    <script>
+        var suggestionSlideIndex = 0;
+        suggestionSlide();
+        
+        function incrementSlide(i)
+        {
+            suggestionSlideIndex += i;
+            suggestionSlide();
+        }
+
+        function suggestionSlide()
+        {
+            var suggestions = document.getElementsByClassName("suggestionCategory");
+            
+            var i;
+            for(i = 0; i < suggestions.length; i++) // reset all the form categories to not display
+            {
+                suggestions[i].style.display = "none";
+            }
+
+            if(suggestionSlideIndex < 0) // if index is lower then 0 set index to 0
+            {
+                suggestionSlideIndex = 0;
+            }
+
+            if(suggestionSlideIndex > 2) // if index is greater the suggestion length set to suggestion length
+            {
+                suggestionSlideIndex = 2;
+            }
+            
+            suggestions[suggestionSlideIndex].style.display = "block" // display the selected item
+        }
+
+
+    </script>
    </head>
 
     <body>
@@ -17,7 +53,7 @@
         </div>
 
         <div class = "upperSuggestion">
-            <div class = "welcomeText">
+            <div class = "welcomeText" style = "justify-content: center; align-items: center;">
                 <h1>Suggest a holiday package.</h1>
                 
                 <a class = "button" href="#suggestionForm"> Start suggestion</a> <!--ISN"T FORMATED CORRECTLY-->
@@ -25,18 +61,22 @@
         </div>
 
         <div id="suggestionForm" class = "lowerSuggestion">
-            <h2>
-                Create a holiday suggestion 
-            </h2>
+
 
             <form action="http://jkorpela.fj/cgi-bin/echo.cgi" method="GET">
-                <h3>Your info :</h3>
+
+
+                <div class = "suggestionCategory">
+                    <h3>Your info :</h3>
                     First Name: <input type="text" name="fName"> <br>
                     Last Name: <input type="text" name="lName"> <br>
                     Email: <input type="text" name="email"> <br>
                     Ammount of suggestions made before: <input type="text" name="prevSuggestions"> <br>
                     Have you used our services before? <input type="radio" name="prevUses" value="Yes"> Yes   <input type="radio" name="prevUses" value="No"> No <br>
-                <h3>Holiday suggestions: </h3>
+                </div>
+
+                <div class = "suggestionCategory" style = "display: none;">
+                    <h3>Holiday suggestions: </h3>
                     Holiday name: <input type="text" name="holName"> <br>
                     Category: <select name="category">
                                 <option value="">Select One</option>
@@ -49,14 +89,28 @@
                     Is pricing included: <input type="radio" name="pirceInclude" value="Yes"> Yes   <input type="radio" name="pirceInclude" value="No"> No <br>  
                     Is there a coupon code: <input type="radio" name="couponCode" value="Yes"> Yes   <input type="radio" name="couponCode" value="No"> No <br>
                     Recommended stay time: <input type="text" name="stayTime"> <br>
-                    <h4> Location:</h4> <br>
+
+                </div>
+                
+
+                <div class = "suggestionCategory" style = "display: none;">
+                    <h3>Accommodation options: </h3> <br>
                             Country: <input type="text" name="Country"> <br>
                             City: <input type="text" name="City"> <br>
                             Post Code: <input type="text" name="postCode"> <br>
+
+                </div>
+
+                
+
                 <br>
 
                 <input style="position: absolute; right: 125px;" type="reset" value="Clear">
                 <input style="position: absolute; right: 50px;" type="submit" value="Submit">
+
+                <a class = "button" onclick="incrementSlide(1)" style = "cursor:pointer">Next</a>
+                <a class = "button" onclick="incrementSlide(-1)" style = "cursor:pointer">Back </a>
+
             </form>
             
         </div>
