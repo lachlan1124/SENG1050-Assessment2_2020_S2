@@ -40,14 +40,38 @@
         function validateForm()
         {
             var form = document.forms["suggestion"].elements;
+            var submitForm = true;
+
 
             for(var i = 0; i < form.length; i++)
             {
-                if (form.value == "")
+                if (form[i].value == "")
+                {
                     document.getElementById("RequiredFormsAlert").style.display = "block"
+                    submitForm = false;
+                }
+                    
 
-                if(form.name == "email")
-                    document.getElementById("RequiredEmailAlert").style.display = "block"
+                if(form[i].name == "email")
+                {
+                    var pattern = /^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z0-9]/
+
+                    if(!pattern.test(form[i].value))
+                    {
+                        document.getElementById("RequiredEmailAlert").style.display = "block"
+                        submitForm = false;
+                    }
+                    else
+                    {
+                        document.getElementById("RequiredEmailAlert").style.display = "none"
+                    }
+                }
+
+            }
+
+            if (submitForm)
+            {
+                subForm();
             }
     
 
@@ -87,58 +111,69 @@
         <div id="suggestionForm" class = "lowerSuggestion">
 
 
-            <form name = "suggestion" action="http://jkorpela.fj/cgi-bin/echo.cgi" method="GET">
+            <form name = "suggestion" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="GET">
 
 
                 <div class = "suggestionCategory">
-                    <h3>Your info :</h3>
-                    First Name: <input type="text" name="fName" > <br>
-                    Last Name: <input type="text" name="lName" > <br>
-                    Email: <input type="text" name="email" > <br>
-                    Ammount of suggestions made before: <input type="text" name="prevSuggestions" > <br>
-                    Have you used our services before? <input type="radio" name="prevUses" value="Yes" > Yes   <input type="radio" name="prevUses" value="No" > No <br>
+                    <h3>Your info</h3>
+                    First Name: <input type="text" name="fName" > *<br>
+                    Last Name: <input type="text" name="lName" > *<br>
+                    Email: <input type="text" name="email" > *<br>
+                    Ammount of suggestions made before: <input type="text" name="prevSuggestions" > *<br>
+                    Have you used our services before? <input type="radio" name="prevUses" value="Yes" > Yes   <input type="radio" name="prevUses" value="No" > No *<br>
                 </div>
 
                 <div class = "suggestionCategory" style = "display: none;">
-                    <h3>Holiday suggestions: </h3>
-                    Holiday name: <input type="text" name="holName" > <br>
-                    Category: <select name="category" >
+                    <h3>Holiday suggestions </h3>
+                    Holiday name: <input type="text" name="holName" > *<br>
+                    Category: <select name="category" > 
                                 <option value="">Select One</option>
-                                <option value="">Beach</option>
-                                <option value="">Adventure</option>
-                                <option value="">Snow</option>
-                                <option value="">Luxury</option>
-                            </select><br>
-                    Description: <br> <textarea name="description" rows="4" cols="200" >Please enter a description.</textarea> <br>
-                    Is pricing included: <input type="radio" name="pirceInclude" value="Yes" > Yes   <input type="radio" name="pirceInclude" value="No" > No <br>  
-                    Is there a coupon code: <input type="radio" name="couponCode" value="Yes" > Yes   <input type="radio" name="couponCode" value="No"  > No <br>
-                    Recommended stay time: <input type="text" name="stayTime" > <br>
+                                <option value="Beach">Beach</option>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Snow">Snow</option>
+                                <option value="Luxury">Luxury</option>
+                            </select>*<br>
+                    Description: *<br> <textarea name="description" rows="4" cols="200" >Please enter a description.</textarea> <br>
+                    Is pricing included: <input type="radio" name="pirceInclude" value="Yes" > Yes   <input type="radio" name="pirceInclude" value="No" > No *<br>  
+                    Is there a coupon code: <input type="radio" name="couponCode" value="Yes" > Yes   <input type="radio" name="couponCode" value="No"  > No *<br>
+                    Recommended stay time: <input type="text" name="stayTime" > *<br>
 
                 </div>
                 
 
                 <div class = "suggestionCategory" style = "display: none;">
-                    <h3>Accommodation options: </h3> <br>
-                            Country: <input type="text" name="Country" > <br>
-                            City: <input type="text" name="City" > <br>
-                            Post Code: <input type="text" name="postCode" > <br>
+                    <h3>Location </h3> <br>
+                            Country: <input type="text" name="Country" > *<br>
+                            City: <input type="text" name="City" > *<br>
+                            Post Code: <input type="text" name="postCode" > *<br>
 
                 </div>
 
                 
 
+                <hr>
                 <br>
 
-                <a class = "button" onclick="clearForm()" style = "position: absolute; right: 180px;">Clear</a>
-                <a class = "button" onclick="validateForm()" style = "position: absolute; right: 50px;">Submit</a>
+                <a class = "button" onclick="clearForm()" style = "position: absolute; right: 180px;cursor:pointer">Clear</a>
+                <a class = "button" onclick="validateForm()" style = "position: absolute; right: 50px;cursor:pointer">Submit</a>
 
-                <a class = "button" onclick="incrementSlide(1)" style = "cursor:pointer">Next</a>
-                <a class = "button" onclick="incrementSlide(-1)" style = "cursor:pointer">Back </a>
+                <a class = "button" onclick="incrementSlide(-1)" style = "cursor:pointer; position: absoulute;">Back</a>
+                <a class = "button" onclick="incrementSlide(1)" style = "cursor:pointer; position: absoulute;">Next</a>
+
+                <div id = "RequiredFormsAlert" style="display: none; color:red; font-size: 24px;">
+                    <p><b>Please fill out the required items</b></p>
+
+                </div>
+
+                <div id = "RequiredEmailAlert" style="display: none; color:red; font-size: 24px;">
+                    <p><b>Please Enter a valid email</b></p>
+
+                </div>
 
             </form>
             
         </div>
-
+        <hr>
         <div class = "copyright">
             <footer>
                <p> © Copyright 2020 Lachlan Marler | C3351542 | C3351542@uon.edu.au</p>

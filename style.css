@@ -224,12 +224,12 @@ hr {
 }
 
 .lowerSuggestion {
-    background-color: #7C7ABC;
+    background-color: #2F2E47;
     height: 100%;
     padding-top: 20px;
-    padding-left: 50px;
     position: relative;
 
+    color: white;
 
 
     text-align: center;
@@ -239,3 +239,14 @@ hr {
 
 .lowerSuggestion h2 { text-decoration: none;}
 
+.suggestionCategory 
+{
+    height: 75%;
+}
+
+.packages h2
+{
+    color: white;  
+    text-decoration: none;
+    text-align: center;
+}
