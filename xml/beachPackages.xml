@@ -71,35 +71,6 @@
     </holidayPackage>
 
     <holidayPackage>
-        <packageName>Gold Coast Holiday</packageName>
-        <description>Enjoy 14 days at the sunny Gold Coast located in QueensLand. There is plenty to do from the beautiful beach to the taking a short drive to the theme parks. </description>
-        <cost>$700</cost>
-        <numberOfNights>14</numberOfNights>
-        <popularity>4</popularity>
-        <accommodationOptions>
-            <accommodationName>Burleigh Beach Tower</accommodationName>
-            <location>52 Goodwin Terrace, Burleigh Heads QLD 4220</location>
-            <additionalCost>$4200</additionalCost>
-        </accommodationOptions>
-        <picturePath>images/goldCoast.jpg</picturePath>
-        <URL>pages/goldCoast.html</URL>
-        <flightOption>
-            <airplaneCompany>&Jet;</airplaneCompany>
-            <additionalCost>100</additionalCost>
-        </flightOption>
-        <flightOption>
-            <airplaneCompany>&Q;</airplaneCompany>
-            <additionalCost>200</additionalCost>
-        </flightOption>
-        <carRentOption>
-            <carRentCompany>East Coast Car Rentals</carRentCompany>
-            <additionalCost>250</additionalCost>
-            <availableCars>Suzuki Swift</availableCars>
-            <availableCars>Kia Rio</availableCars>
-        </carRentOption>
-    </holidayPackage>
-
-    <holidayPackage>
         <packageName>Luxury Noosa Holiday</packageName>
         <description>Enjoy the beautiful beaches of Noosa in QueensLand. With a lovely 25 °C average tempurture the weather is alway nice.</description>
         <cost>$2000</cost>
@@ -128,6 +99,35 @@
             <additionalCost>$1000</additionalCost>
             <availableCars>Audi Q8</availableCars>
             <availableCars>Ford Mustang GT Convertible</availableCars>
+        </carRentOption>
+    </holidayPackage>
+
+    <holidayPackage>
+        <packageName>Gold Coast Holiday</packageName>
+        <description>Enjoy 14 days at the sunny Gold Coast located in QueensLand. There is plenty to do from the beautiful beach to the taking a short drive to the theme parks. </description>
+        <cost>$700</cost>
+        <numberOfNights>14</numberOfNights>
+        <popularity>4</popularity>
+        <accommodationOptions>
+            <accommodationName>Burleigh Beach Tower</accommodationName>
+            <location>52 Goodwin Terrace, Burleigh Heads QLD 4220</location>
+            <additionalCost>$4200</additionalCost>
+        </accommodationOptions>
+        <picturePath>images/goldCoast.jpg</picturePath>
+        <URL>pages/goldCoast.html</URL>
+        <flightOption>
+            <airplaneCompany>&Jet;</airplaneCompany>
+            <additionalCost>100</additionalCost>
+        </flightOption>
+        <flightOption>
+            <airplaneCompany>&Q;</airplaneCompany>
+            <additionalCost>200</additionalCost>
+        </flightOption>
+        <carRentOption>
+            <carRentCompany>East Coast Car Rentals</carRentCompany>
+            <additionalCost>250</additionalCost>
+            <availableCars>Suzuki Swift</availableCars>
+            <availableCars>Kia Rio</availableCars>
         </carRentOption>
     </holidayPackage>
 </holidayPackages>

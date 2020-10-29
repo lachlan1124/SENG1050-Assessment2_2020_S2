@@ -246,7 +246,19 @@ hr {
 
 .packages h2
 {
-    color: white;  
     text-decoration: none;
     text-align: center;
+
+}
+
+.packages 
+{
+    color: white;
+}
+
+
+.packages p
+{
+
+    margin-left: 30px;
 }

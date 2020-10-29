@@ -24,8 +24,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
                 <hr/>
                 <xsl:for-each select="holidayPackages/holidayPackage">
+                <xsl:sort select="packageName"/> 
                     <div class = "packages">
+
                         <h2> <xsl:value-of select="packageName"/> </h2>
+
+                        <p><xsl:value-of select="description"/></p>
+
+                        <a href=<xsl:value-of select = "picturePath"></a>
                         <hr/>
                     </div>
                 </xsl:for-each>
