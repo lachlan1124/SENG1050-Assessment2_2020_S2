@@ -38,7 +38,11 @@ hr {
     margin-top: 0px;
     padding-top: 0px;
     color: #35AD6D;
+    position: relative;
 }
+
+
+
 
 /* Navigation menu styling */
 .nav ul {
@@ -137,7 +141,7 @@ hr {
 {
     /* set background colour to whitish */
     background-color: #CECECE;
-
+    color: black;
     /* Margins */
     margin-left: 1cm;
     margin-right: 1cm;
@@ -226,13 +230,11 @@ hr {
 .lowerSuggestion {
     background-color: #2F2E47;
     height: 100%;
+    width: 100%;
     padding-top: 20px;
     position: relative;
 
     color: white;
-
-
-    text-align: center;
 
 
 }
@@ -242,6 +244,14 @@ hr {
 .suggestionCategory 
 {
     height: 75%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.suggestionCategory h3
+{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
 }
 
 .packages h2
@@ -251,14 +261,10 @@ hr {
 
 }
 
-.packages 
+
+.packages img
 {
-    color: white;
+    padding-left: 5px ;
+    padding-right: 15px;
 }
 
-
-.packages p
-{
-
-    margin-left: 30px;
-}

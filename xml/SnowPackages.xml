@@ -60,7 +60,7 @@
         <reviews person = "Jeff">Awsome ski Resort, great for snowboarding and sking</reviews>
         <reviews>The leasons are great</reviews>
         <reviews>Slops for ever skill level</reviews>
-        <picturePath>images/charlottePass.jpg</picturePath>
+        <picturePath>../images/charlottePass.jpg</picturePath>
         <URL>pages/charlottePass.html</URL>
         <flightOption>
             <airplaneCompany>&Jet;</airplaneCompany>
@@ -84,7 +84,7 @@
             <location>Perisher Ski Resort</location>
             <additionalCost>$4000</additionalCost>
         </accommodationOptions>
-        <picturePath>images/perisher.jpg</picturePath>
+        <picturePath>../images/perisher.jpg</picturePath>
         <URL>pages/perisher.html</URL>
         <carRentOption>
             <carRentCompany>Hertz</carRentCompany>
@@ -111,7 +111,7 @@
             <location>Perisher Ski Resort</location>
             <additionalCost>$6000</additionalCost>
         </accommodationOptions>
-        <picturePath>images/perisher.jpg</picturePath>
+        <picturePath>../images/perisher.jpg</picturePath>
         <URL>pages/perisher.html</URL>
         <carRentOption>
             <carRentCompany>Hertz</carRentCompany>

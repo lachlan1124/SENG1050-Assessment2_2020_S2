@@ -51,7 +51,7 @@
         <reviews person = "Jim">Had a great time</reviews>
         <reviews> The accommodation was great</reviews>
         <reviews person = "Jess">Lovely town near the beach</reviews>
-        <picturePath>images/byronBay.jpg</picturePath>
+        <picturePath>../images/byron.jpg</picturePath>
         <URL>pages/Byron.html</URL>
         <flightOption>
             <airplaneCompany>&Jet;</airplaneCompany>
@@ -88,7 +88,7 @@
         </accommodationOptions>
         <couponCode>GDS32</couponCode>
         <reviews person = "Josh">Loved the beachside accommodation</reviews>
-        <picturePath>images/nossa.jpg</picturePath>
+        <picturePath>../images/noosa.jpg</picturePath>
         <URL>pages/noosa.html</URL>
         <flightOption>
             <airplaneCompany>&Q;</airplaneCompany>
@@ -113,7 +113,7 @@
             <location>52 Goodwin Terrace, Burleigh Heads QLD 4220</location>
             <additionalCost>$4200</additionalCost>
         </accommodationOptions>
-        <picturePath>images/goldCoast.jpg</picturePath>
+        <picturePath>../images/goldCoast.jpg</picturePath>
         <URL>pages/goldCoast.html</URL>
         <flightOption>
             <airplaneCompany>&Jet;</airplaneCompany>
